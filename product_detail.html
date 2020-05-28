@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="./css/app.css"/>
+     <link rel="stylesheet" href="./css/style.css"/>
+     <link rel="stylesheet" href="./css/please-wait.css"/>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+body{
+                height: 100%;
+            }
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+            }
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+          }
+        </style>
+<body>
+<div class="inner" ng-view="">
+    </div>
+<div id="app" class="uk-section-muted">
+  <div>
+    <div class="uk-offcanvas-content">
+      <div>
+        <div class="tch-scroll-header uk-sticky uk-navbar-container tm-navbar-container inactive uk-sticky-fixed" style="background-color: white; position: fixed; top: 0px; width: 1903px;">
+          <div class="uk-container uk-container-expand">
+            <nav uk-navbar="" class="uk-navbar-container uk-navbar" style="height: 60px; background-color: white;">
+              <div class="nav-overlay uk-navbar-left">
+                <a href="/" class="uk-logo">
+                  <img uk-svg="" src="https://order.thecoffeehouse.com/img/logo.png" width="200" class="uk-margin-small-right uk-visible@m">
+                </a>
+              </div>
+              <div class="nav-overlay uk-navbar-center">
+                <div class="uk-navbar-item uk-visible@m">
+                  <button type="button" class="uk-button uk-button-default">GIAO NGAY</button>
+                  <div class="uk-padding-remove uk-dropdown" style="width: 300px;">
+                    <ul class="uk-nav uk-dropdown-nav" style="margin: 10px 0px;">
+                      <li>
+                        <a href="#">
+                          <div class="uk-grid-small uk-grid" style="margin-left: 0px;">
+                            <div class="uk-width-expand uk-padding-remove"><span>GIAO NGAY</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="uk-nav-divider"></li>
+                      <li style="cursor: pointer;">
+                        <div class="uk-grid-small uk-grid" style="margin-left: 0px;">
+                          <div class="uk-width-auto"><span uk-icon="icon: calendar" class="uk-margin-small-right uk-width-auto uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z"></path> <rect width="1" height="3" x="6" y="2"></rect> <rect width="1" height="3" x="13" y="2"></rect></svg></span>
+                          </div>
+                          <div class="uk-width-expand uk-padding-remove"><span>Thời gian đặt hàng</span>
+                          </div>
+                          <!---->
+                        </div>
+                      </li>
+                      <!---->
+                    </ul>
+                  </div>
+                </div>
+                <div class="uk-navbar-item uk-visible@m">
+                  <div class="uk-inline uk-width-large">
+                    <div class="logaddress">
+                      <form><span class="uk-form-icon" style="color: rgb(112, 112, 112);"><img src="./img/icon/location.png"></span> 
+                        <input id="searchLoction" placeholder="Nhập địa chỉ giao hàng" type="text" autocomplete="off" class="uk-input">
+                      </form>
+                      <div class="uk-dropdown uk-dropdown-bottom-left uk-padding-remove uk-position-absolute dropbox-location" style="width: 100%;">
+                        <ul class="uk-nav uk-dropdown-nav uk-list-divider" style="margin: 10px 0px; display: none;"></ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-overlay uk-navbar-right">
+                <div class="uk-navbar-item uk-visible@l"><a href="/signin" class="uk-button uk-button-default tm-button-default uk-icon">
+              Đăng
+              nhập
+              </a>
+                </div>
+                <div id="module-94" class="uk-navbar-item uk-visible@m">
+                  <div class="custom"><a class="uk-icon"><span uk-icon="icon: cart; ratio: 1.2" class="uk-icon"><span class="uk-badge">2</span><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle cx="7.3" cy="17.3" r="1.4"></circle> <circle cx="13.3" cy="17.3" r="1.4"></circle> <polyline fill="none" stroke="#000" points="0 2 3.2 4 5.3 12.5 16 12.5 18 6.5 8 6.5"></polyline></svg></span></a>
+                  </div>
+                </div>
+              </div>
+              <div hidden="hidden" class="nav-overlay uk-navbar-left uk-flex-1">
+                <div class="uk-navbar-item uk-width-expand">
+                  <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input type="search" placeholder="Tìm kiếm sản phẩm3" autofocus="autofocus" class="uk-search-input" style="font-size: 20px;">
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="uk-sticky-placeholder" style="height: 60px; margin: 0px;"></div>
+        <div id="product">
+	<!-- Breadcrumb -->
+	<div id="breadcrumb">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 ">
+					<ol class="breadcrumb breadcrumb-arrow" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/collections/all" target="_self"><span itemprop="name">Menu</span></a>
+							<meta itemprop="position" content="1">
+						</li>
+						<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/collections/tra-trai-cay" target="_self" itemprop="item"><span itemprop="name">TRÀ TRÁI CÂY</span></a>
+							<meta itemprop="position" content="2">
+						</li>
+						<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="active"><span itemprop="name"> TRÀ BƯỞI MẬT ONG</span>
+							<meta itemprop="position" content="2">
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumb -->
+	<div class="product-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="product_info_wrap flex_wrap display_flex">
+						<div id="img_product">
+							<img class="product_featured_image" src="./img/trabuoi.webp" alt="tra buoi mat ong">
+						</div>
+						<div class="info_product display_flex align-items-center">
+							<div class="info_product_wrap">
+								<h1 class="info_product_title line_after_heading">TRÀ BƯỞI MẬT ONG</h1>
+								<form id="add_item_form" action="/cart/add" method="post" class="variants clearfix">
+									<div class="select clearfix" style="display:none">
+										<select id="product-select" name="id" style="display:none">
+											<option value="1050604305">Default Title - 50,000 đ</option>
+										</select>
+										<input type="hidden" value="" id="inventory_qty">
+									</div>
+									<div class="product_price">50,000 đ</div>
+									<div class="btn_action"><a href="//order.thecoffeehouse.com/order" target="_blank" title="Mua ngay">MUA NGAY</a>
+									</div>
+									<p class="delivery_hotline">Gọi giao hàng tận nơi <a href="tel:18006936" title="Hotline: 1800 6936">1800 6936</a>
+									</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="product_description">
+		<div class="block_des block_des_1" style="text-align: center;" data-mce-style="text-align: center;">
+			<div class="block_container">
+				<h3><span><strong>Cho ngày thêm tươi</strong></span></h3>
+				<p><span>Lớp trà oolong đã man mát, nhưng sẽ vị càng thêm vị khi có hương bưởi cùng những tép bưởi mọng nước đi kèm - cho bạn 1 cách thưởng thức đầy thú vị. Cùng đánh thức vị giác, khởi động 1 ngày tươi tắn cùng hương vị mới lạ này nhé!</span>
+				</p>
+				<p><span color="#ea8025" style="color: #ea8025;" data-mce-style="color: #ea8025;"><b></b></span><span color="#ea8025" style="color: #ea8025;" data-mce-style="color: #ea8025;"><b></b></span>
+					<br>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="product-related">
+		<div class="container_flex">
+			<div class="row_flex">
+				<h3 class="related_product_title">Có thể bạn thích</h3>
+				<div class="list_product_related flex_wrap display_flex menu_lists">
+					<div class="menu_item">
+						<div class="menu_item_image">
+							<a href="/products/tra-dao-cam-sa" title="">
+								<img src="./img/tra1.webp" alt="tra dao cam sa">
+							</a>
+							<div class="best_seller">
+								<img class="svg-best-seller" src="//file.hstatic.net/1000075078/file/orion_diploma.svg" alt="icon ban chay nhat"><span>Bán chạy nhất</span>
+							</div>
+						</div>
+						<div class="menu_item_info bg_white">
+							<h3><a href="/products/tra-dao-cam-sa" title="">TRÀ ĐÀO CAM SẢ</a></h3>
+							<div class="price_product_item">45,000 đ</div><a class="menu_item_action animate_btn" href="//order.thecoffeehouse.com/order" target="_blank" title="Mua Ngay">Mua ngay</a>
+						</div>
+					</div>
+					<div class="menu_item">
+						<div class="menu_item_image">
+							<a href="/products/tra-buoi-mat-ong-1" title="">
+								<img src="./img/tra1.webp" alt="tra buoi mat ong nong">
+							</a>
+						</div>
+						<div class="menu_item_info bg_white">
+							<h3><a href="/products/tra-buoi-mat-ong-1" title="">TRÀ BƯỞI MẬT ONG (NÓNG)</a></h3>
+							<div class="price_product_item">55,000 đ</div><a class="menu_item_action animate_btn" href="//order.thecoffeehouse.com/order" target="_blank" title="Mua Ngay">Mua ngay</a>
+						</div>
+					</div>
+					<div class="menu_item">
+						<div class="menu_item_image">
+							<a href="/products/tra-gan-nhau-hon" title="">
+								<img src="./img/tra1.webp" alt="tra gan nhau hon">
+							</a>
+							<div class="new">
+								<img class="svg-new" src="//file.hstatic.net/1000075078/file/orion_sheriff-star.svg" alt="icon new"><span>MỚI</span>
+							</div>
+						</div>
+						<div class="menu_item_info bg_white">
+							<h3><a href="/products/tra-gan-nhau-hon" title="">TRÀ GẦN NHAU HƠN</a></h3>
+							<div class="price_product_item">50,000 đ</div><a class="menu_item_action animate_btn" href="//order.thecoffeehouse.com/order" target="_blank" title="Mua Ngay">Mua ngay</a>
+						</div>
+					</div>
+					<div class="menu_item">
+						<div class="menu_item_image">
+							<a href="/products/tra-buoi-mat-ong" title="">
+								<img src="./img/tra1.webp" alt="tra buoi mat ong">
+							</a>
+						</div>
+						<div class="menu_item_info bg_white">
+							<h3><a href="/products/tra-buoi-mat-ong" title="">TRÀ BƯỞI MẬT ONG</a></h3>
+							<div class="price_product_item">50,000 đ</div><a class="menu_item_action animate_btn" href="//order.thecoffeehouse.com/order" target="_blank" title="Mua Ngay">Mua ngay</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
