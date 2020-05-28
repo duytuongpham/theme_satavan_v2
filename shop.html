@@ -3,10 +3,7 @@
 <head>
      <link rel="stylesheet" href="./css/app.css"/>
      <link rel="stylesheet" href="./css/please-wait.css"/>
-     <script type="text/javascript" src="./js/accountkit.js"></script>
-     <script type="text/javascript" src="./js/app.js"></script>
-     <script type="text/javascript" src="./js/please-wait.min.js"></script>
-     <script type="text/javascript" src="./js/zalo.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <style>
 body{
@@ -60,49 +57,32 @@ body{
     </div>
 <div id="app" class="uk-section-muted">
   <div>
-    <div data-v-300db8a7="" class="uk-offcanvas-content" data="[object Object]">
-      <div data-v-300db8a7="" searchtext="">
-        <div uk-sticky="top:0" animation="uk-animation-slide-top" cls-active="uk-navbar-container tm-navbar-container active" cls-inactive="uk-navbar-container tm-navbar-container inactive" class="tch-scroll-header uk-sticky uk-navbar-container tm-navbar-container inactive uk-sticky-fixed" style="background-color: white; position: fixed; top: 0px; width: 1903px;">
+    <div class="uk-offcanvas-content">
+      <div>
+        <div class="tch-scroll-header uk-sticky uk-navbar-container tm-navbar-container inactive uk-sticky-fixed" style="background-color: white; position: fixed; top: 0px; width: 1903px;">
           <div class="uk-container uk-container-expand">
             <nav uk-navbar="" class="uk-navbar-container uk-navbar" style="height: 60px; background-color: white;">
               <div class="nav-overlay uk-navbar-left">
                 <a href="/" class="uk-logo">
                   <img uk-svg="" src="https://order.thecoffeehouse.com/img/logo.png" width="200" class="uk-margin-small-right uk-visible@m">
                 </a>
-                <a href="/" class="uk-hidden@m">
-                  <img uk-svg="" src="/img/mobile-logo.svg" width="40" height="40" class="uk-margin-small-right" style="padding-left: 10px;" hidden="true">
-                  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="padding-left: 10px;" width="40" height="40" class="uk-margin-small-right uk-svg">
-                    <defs>
-                      <style>
-                        .cls-1{fill:none;}
-                      </style>
-                    </defs>
-                    <title>logo</title>
-                    <path d="M4.42,9.43a7.58,7.58,0,0,1,15.16,0A7.47,7.47,0,0,1,12,16.8,7.47,7.47,0,0,1,4.42,9.43ZM18.74,21.52a.58.58,0,0,1-.62.48H5.74a.55.55,0,0,1-.59-.48V18.41a.55.55,0,0,1,.59-.51H18.12a.58.58,0,0,1,.62.51ZM8.74,9.43a3.26,3.26,0,1,0,6.52,0,3.26,3.26,0,1,0-6.52,0Z"></path>
-                    <rect class="cls-1" width="24" height="24"></rect>
-                  </svg>
-                </a>
               </div>
               <div class="nav-overlay uk-navbar-center">
                 <div class="uk-navbar-item uk-visible@m">
                   <button type="button" class="uk-button uk-button-default">GIAO NGAY</button>
-                  <div uk-dropdown="mode: click" class="uk-padding-remove uk-dropdown" style="width: 300px;">
+                  <div class="uk-padding-remove uk-dropdown" style="width: 300px;">
                     <ul class="uk-nav uk-dropdown-nav" style="margin: 10px 0px;">
                       <li>
                         <a href="#">
-                          <div uk-grid="" class="uk-grid-small uk-grid" style="margin-left: 0px;">
-                            <div class="uk-width-auto"><span uk-icon="icon: clock" class="uk-margin-small-right uk-width-auto uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="10" cy="10" r="9"></circle> <rect x="9" y="4" width="1" height="7"></rect> <path fill="none" stroke="#000" stroke-width="1.1" d="M13.018,14.197 L9.445,10.625"></path></svg></span>
-                            </div>
+                          <div class="uk-grid-small uk-grid" style="margin-left: 0px;">
                             <div class="uk-width-expand uk-padding-remove"><span>GIAO NGAY</span>
-                            </div>
-                            <div class="uk-width-auto"><span uk-icon="icon: check" class="uk-margin-small-right uk-width-auto uk-icon" style="color: rgb(67, 164, 34);"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>
                             </div>
                           </div>
                         </a>
                       </li>
                       <li class="uk-nav-divider"></li>
                       <li style="cursor: pointer;">
-                        <div uk-grid="" class="uk-grid-small uk-grid" style="margin-left: 0px;">
+                        <div class="uk-grid-small uk-grid" style="margin-left: 0px;">
                           <div class="uk-width-auto"><span uk-icon="icon: calendar" class="uk-margin-small-right uk-width-auto uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z"></path> <rect width="1" height="3" x="6" y="2"></rect> <rect width="1" height="3" x="13" y="2"></rect></svg></span>
                           </div>
                           <div class="uk-width-expand uk-padding-remove"><span>Thời gian đặt hàng</span>
@@ -128,162 +108,78 @@ body{
                 </div>
               </div>
               <div class="nav-overlay uk-navbar-right">
-                <div class="uk-hidden@m"><a href="#" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" class="uk-hidden@m"><span uk-icon="icon:search;ratio:1.4" class="uk-margin-small-right uk-icon"><svg width="28" height="28" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle> <path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></span></a>
-                </div>
                 <div class="uk-navbar-item uk-visible@l"><a href="/signin" class="uk-button uk-button-default tm-button-default uk-icon">
               Đăng
               nhập
-            </a>
+              </a>
                 </div>
                 <div id="module-94" class="uk-navbar-item uk-visible@m">
-                  <div class="custom"><a class="uk-icon"><span uk-icon="icon: cart; ratio: 1.2" class="uk-icon"><span class="uk-badge">1</span><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle cx="7.3" cy="17.3" r="1.4"></circle> <circle cx="13.3" cy="17.3" r="1.4"></circle> <polyline fill="none" stroke="#000" points="0 2 3.2 4 5.3 12.5 16 12.5 18 6.5 8 6.5"></polyline></svg></span></a>
+                  <div class="custom"><a class="uk-icon"><span uk-icon="icon: cart; ratio: 1.2" class="uk-icon"><span class="uk-badge">2</span><svg width="24" height="24" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle cx="7.3" cy="17.3" r="1.4"></circle> <circle cx="13.3" cy="17.3" r="1.4"></circle> <polyline fill="none" stroke="#000" points="0 2 3.2 4 5.3 12.5 16 12.5 18 6.5 8 6.5"></polyline></svg></span></a>
                   </div>
-                </div>
-                <div class="uk-navbar-toggle uk-hidden@m"><a href="/signin" class="uk-button uk-button-default uk-button-small">
-              Đăng
-              nhập
-            </a>
                 </div>
               </div>
               <div hidden="hidden" class="nav-overlay uk-navbar-left uk-flex-1">
                 <div class="uk-navbar-item uk-width-expand">
                   <form class="uk-search uk-search-navbar uk-width-1-1">
-                    <input type="search" placeholder="Tìm kiếm sản phẩm " autofocus="autofocus" class="uk-search-input" style="font-size: 20px;">
+                    <input type="search" placeholder="Tìm kiếm sản phẩm3" autofocus="autofocus" class="uk-search-input" style="font-size: 20px;">
                   </form>
                 </div>
-                <a uk-close="" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#" class="uk-navbar-toggle uk-close uk-icon">
-                  <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                    <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
-                    <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
-                  </svg>
-                </a>
               </div>
             </nav>
           </div>
         </div>
         <div class="uk-sticky-placeholder" style="height: 60px; margin: 0px;"></div>
-        <div id="offcanvas" uk-offcanvas="mode: push; overlay: true" class="uk-offcanvas" style="color: black;">
-          <div class="uk-offcanvas-bar">
-            <div class="uk-panel">
-              <ul uk-nav="" class="uk-nav-default uk-nav-parent-icon uk-nav">
-                <li class="uk-parent uk-text-bold uk-active uk-nav-header"><a href="#">Đơn hàng vừa đặt</a> 
-                  <ul class="uk-nav-sub" hidden="" aria-hidden="true">
-                    <li class="uk-text-danger uk-active uk-nav-header uk-margin-remove">Không tìm thấy đơn hàng</li>
-                  </ul>
-                </li>
-                <li class="uk-nav-divider"></li>
-                <li class="uk-text-bold uk-active uk-nav-header uk-margin-remove"><a href="/point">Tích điểm</a>
-                </li>
-                <li class="uk-text-bold uk-active uk-nav-header uk-margin-remove"><a href="/coupon">Coupon</a>
-                </li>
-                <li class="uk-nav-divider"></li>
-                <li class="uk-text-bold uk-active uk-nav-header uk-margin-remove"><a href="#">Thoát</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
-      <div data-v-300db8a7="" class="uk-hidden@m uk-position-relative uk-position-top uk-overlay uk-overlay-default uk-padding-remove uk-margin-remove-left uk-margin-remove-right" style="top: 29px;">
-        <div data-v-300db8a7="" uk-toggle="target: #mobileaddress" class="uk-card uk-card-default uk-card-small uk-card-body" style="padding: 5px 20px;">
-          <p data-v-300db8a7="" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><span data-v-300db8a7="" style="font-size: 0.775rem;">Giao
-                    hàng
-                    tới: </span>
-          </p>
-        </div>
-        <div data-v-300db8a7="" id="mobileaddress" uk-modal="" class="uk-modal-full uk-modal">
-          <div class="uk-modal-dialog uk-modal-body uk-margin-auto-bottom" style="height: 100%;">
-            <button type="button" uk-close="" class="uk-modal-close-default uk-close uk-icon">
-              <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
-                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
-              </svg>
-            </button>
-            <div uk-grid="" class="uk-grid-small uk-grid">
-              <div class="uk-width-1-1 uk-margin-top">
-                <div class="uk-inline uk-width-1-1">
-                  <div class="logaddress">
-                    <form><span class="uk-form-icon" style="color: rgb(112, 112, 112);"><img src="/img/icon/location.png"></span> 
-                      <input id="searchLoction" placeholder="Nhập địa chỉ giao hàng" type="text" autocomplete="off" class="uk-input">
-                    </form>
-                    <div class="uk-dropdown uk-dropdown-bottom-left uk-padding-remove uk-position-absolute dropbox-location" style="width: 100%;">
-                      <ul class="uk-nav uk-dropdown-nav uk-list-divider" style="margin: 10px 0px; display: none;"></ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="uk-width-1-1 uk-margin-top">
-                <ul class="uk-nav uk-nav-default">
-                  <li>
-                    <a href="#">
-                      <div uk-grid="" class="uk-grid-small uk-grid uk-grid-stack" style="margin-left: 0px;">
-                        <div class="uk-width-auto"><span uk-icon="icon: clock" class="uk-margin-small-right uk-width-auto uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="10" cy="10" r="9"></circle> <rect x="9" y="4" width="1" height="7"></rect> <path fill="none" stroke="#000" stroke-width="1.1" d="M13.018,14.197 L9.445,10.625"></path></svg></span>
-                        </div>
-                        <div class="uk-width-expand uk-padding-remove"><span>GIAO NGAY</span>
-                        </div>
-                        <div class="uk-width-auto"><span uk-icon="icon: check" class="uk-margin-small-right uk-width-auto uk-icon" style="color: rgb(67, 164, 34);"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <polyline fill="none" stroke="#000" stroke-width="1.1" points="4,10 8,15 17,4"></polyline></svg></span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="uk-nav-divider"></li>
-                  <li style="cursor: pointer;">
-                    <div uk-grid="" class="uk-grid-small uk-grid uk-grid-stack" style="margin-left: 0px;">
-                      <div class="uk-width-auto"><span uk-icon="icon: calendar" class="uk-margin-small-right uk-width-auto uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path d="M 2,3 2,17 18,17 18,3 2,3 Z M 17,16 3,16 3,8 17,8 17,16 Z M 17,7 3,7 3,4 17,4 17,7 Z"></path> <rect width="1" height="3" x="6" y="2"></rect> <rect width="1" height="3" x="13" y="2"></rect></svg></span>
-                      </div>
-                      <div class="uk-width-expand uk-padding-remove"><span>Thời gian đặt hàng</span>
-                      </div>
-                      <!---->
-                    </div>
-                  </li>
-                  <!---->
-                </ul>
-              </div>
-            </div>
-            <div class="uk-position-bottom uk-overlay uk-overlay-default uk-text-center uk-padding-remove" style="height: 55px;">
-              <button type="button" class="uk-button uk-button-primary uk-width-1-1">Xác nhận</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-v-300db8a7="" uk-height-viewport="offset-top: true" class="uk-container tch-container uk-margin-small-bottom" style="padding: 8px; box-sizing: border-box; min-height: calc(100vh - 90px);">
-        <div data-v-300db8a7="" id="carouselExampleSlidesOnly" data-ride="carousel" class="carousel slide">
-          <div data-v-300db8a7="" class="carousel-inner carousel-fix">
-            <div data-v-300db8a7="" class="carousel-item active">
-              <a data-v-300db8a7="" href="http://tch.page.link/download" target="blank">
-                <img data-v-300db8a7="" src="./img/banner_download_app.jpg" alt="..." class="d-block w-100">
+      <div class="uk-container tch-container uk-margin-small-bottom" style="padding: 8px; box-sizing: border-box; min-height: calc(100vh - 90px);">
+        <div id="carouselExampleSlidesOnly"class="carousel slide">
+          <div class="carousel-inner carousel-fix">
+            <div class="carousel-item active">
+              <a href="http://tch.page.link/download" target="blank">
+                <img src="./img/banner_download_app.jpg" alt="..." class="d-block w-100">
               </a>
             </div>
           </div>
         </div>
-        <div data-v-300db8a7="" uk-grid="" class="uk-grid-small uk-grid">
-          <div data-v-300db8a7="" class="uk-width-2-3@l uk-width-1-1@m uk-first-column">
-            <div data-v-300db8a7="" uk-grid="" class="uk-grid-small uk-grid">
-              <div data-v-300db8a7="" class="uk-width-1-3@l uk-width-1-3@m uk-first-column">
-                <div data-v-02ec8735="" data-v-300db8a7="">
-                  <div data-v-02ec8735="" class="uk-hidden@m uk-position-fixed uk-position-top uk-position-z-index uk-overlay uk-overlay-default uk-position-large uk-padding-remove uk-margin-remove-left uk-margin-remove-right" style="margin-top: 59px; background-color: white;">
-                    <ul data-v-02ec8735="" uk-scrollspy-nav="closest: li; scroll: true; cls: uk-active; offset: 100;" class="uk-tab uk-child-width-auto tch-scroll-menu" style="width: 100%;">
-                      <li data-v-02ec8735="" class="uk-active"><a data-v-02ec8735="" href="#cate9" style="float: left;">Món được yêu thích</a>
+        <div class="uk-grid-small uk-grid">
+          <div class="uk-width-2-3@l uk-width-1-1@m uk-first-column">
+            <div class="uk-grid-small uk-grid">
+              <div class="uk-width-1-3@l uk-width-1-3@m uk-first-column">
+                <div>
+                  <div class="anyClass uk-con uk-position-fixed uk-position-top uk-position-z-index uk-overlay uk-overlay-default uk-position-large uk-padding-remove uk-margin-remove-left uk-margin-remove-right" style="margin-top: 59px; background-color: white;">
+                    <ul class= uk-tab uk-child-width-auto tch-scroll-menu" style="width: 100%;">
+                      <li class="uk-active"><a href="#cate9" style="float: left;">Món được yêu thích</a>
                       </li>
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate1" style="float: left;">Cà phê</a>
-                      </li>
-                      <!---->
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate2" style="float: left;">Thức uống đá xay</a>
+                      <li><a href="#cate1" style="float: left;">Cà phê</a>
                       </li>
                       <!---->
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate5" style="float: left;">Trà trái cây</a>
+                      <li><a href="#cate2" style="float: left;">Thức uống đá xay</a>
                       </li>
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate6" style="float: left;">Thức uống trái cây</a>
+                      <!---->
+                      <li><a href="#cate5" style="float: left;">Trà trái cây</a>
                       </li>
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate4" style="float: left;">Macchiato</a>
+                      <li><a href="#cate6" style="float: left;">Thức uống trái cây</a>
                       </li>
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate7" style="float: left;">Thức ăn nhẹ</a>
+                      <li><a href="#cate4" style="float: left;">Macchiato</a>
+                      </li>
+                      <li><a href="#cate7" style="float: left;">Thức ăn nhẹ</a>
                       </li>
                       <!---->
                       <!---->
                       <!---->
                       <!---->
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate15" style="float: left;">Choco-Matcha</a>
+                      <li><a href="#cate15" style="float: left;">Choco-Matcha</a>
+                      </li>
+                      <li><a href="#cate15" style="float: left;">Choco-Matcha</a>
+                      </li>
+                      <li><a href="#cate15" style="float: left;">Choco-Matcha</a>
+                      </li>
+                      <li><a href="#cate15" style="float: left;">Choco-Matcha</a>
+                      </li>
+                      <li><a href="#cate15" style="float: left;">Choco-Matcha</a>
+                      </li>
+                      <li><a href="#cate15" style="float: left;">Choco-Matcha</a>
+                      </li>
+                      <li><a href="#cate15" style="float: left;">Choco-Matcha</a>
                       </li>
                       <!---->
                       <!---->
@@ -291,29 +187,29 @@ body{
                       <!---->
                     </ul>
                   </div>
-                  <div data-v-02ec8735="" uk-sticky="offset: 90; bottom: #stop-uk-sticky; media: (min-width: 824px);" class="uk-card uk-card-default uk-card-small uk-card-body uk-visible@m uk-sticky" style="z-index: 0;">
-                    <ul data-v-02ec8735="" uk-scrollspy-nav="closest: li; scroll: true; cls: tch-active; offset: 70;" class="uk-nav uk-nav-default tch-margin-small-bottom" style="margin-left: 0px; margin-right: 0px;">
-                      <li data-v-02ec8735="" class="tch-active"><a data-v-02ec8735="" href="#cate9">Món được yêu thích</a>
+                  <div class="uk-card uk-card-default uk-card-small uk-card-body uk-visible@m uk-sticky" style="z-index: 0;">
+                    <ul  class="uk-nav uk-nav-default tch-margin-small-bottom" style="margin-left: 0px; margin-right: 0px;">
+                      <li class="tch-active"><a href="#cate9">Món được yêu thích</a>
                       </li>
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate1">Cà phê</a>
-                      </li>
-                      <!---->
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate2">Thức uống đá xay</a>
+                      <li><a href="#cate1">Cà phê</a>
                       </li>
                       <!---->
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate5">Trà trái cây</a>
+                      <li><a href="#cate2">Thức uống đá xay</a>
                       </li>
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate6">Thức uống trái cây</a>
+                      <!---->
+                      <li><a href="#cate5">Trà trái cây</a>
                       </li>
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate4">Macchiato</a>
+                      <li><a href="#cate6">Thức uống trái cây</a>
                       </li>
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate7">Thức ăn nhẹ</a>
+                      <li><a href="#cate4">Macchiato</a>
+                      </li>
+                      <li><a href="#cate7">Thức ăn nhẹ</a>
                       </li>
                       <!---->
                       <!---->
                       <!---->
                       <!---->
-                      <li data-v-02ec8735=""><a data-v-02ec8735="" href="#cate15">Choco-Matcha</a>
+                      <li><a href="#cate15">Choco-Matcha</a>
                       </li>
                       <!---->
                       <!---->
@@ -324,28 +220,28 @@ body{
                   <div class="uk-sticky-placeholder" hidden="" style="height: 336px; margin: 0px;"></div>
                 </div>
               </div>
-              <div data-v-300db8a7="" class="uk-width-2-3@l uk-width-2-3@m tch-fix-margin-search">
-                <div data-v-300db8a7="" uk-grid="" class="uk-grid-small uk-grid uk-grid-stack">
-                  <div data-v-300db8a7="" class="uk-width-1-1 uk-first-column">
-                    <div data-v-300db8a7="" class="uk-search uk-search-default uk-width-1-1 uk-visible@m">
-                      <a data-v-300db8a7="" href="# " uk-icon="icon: search " class="uk-form-icon uk-icon">
+              <div class="uk-width-2-3@l uk-width-2-3@m tch-fix-margin-search">
+                <div class="uk-grid-small uk-grid uk-grid-stack">
+                  <div class="uk-width-1-1 uk-first-column">
+                    <div class="uk-search uk-search-default uk-width-1-1 uk-visible@m">
+                      <a href="# " uk-icon="icon: search " class="uk-form-icon uk-icon">
                         <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                           <circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle>
                           <path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path>
                         </svg>
                       </a>
-                      <input data-v-300db8a7="" id="seach " placeholder="Tìm kiếm sản phẩm " type="text " class="uk-input ">
+                      <input id="seach " placeholder="Tìm kiếm sản phẩm " type="text " class="uk-input ">
                     </div>
                   </div>
                 </div>
-                <div data-v-300db8a7="" id="cate9" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <ul data-v-300db8a7="" class="uk-list">
+                <div id="cate9" class="menu">
+                  <div class="uk-width-1-1">
+                    <ul class="uk-list">
                       <li>
                         <label>Món được yêu thích</label>
                         <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
                           <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
+                            <div class="uk-grid-medium uk-flex-top uk-grid">
                               <div class="uk-width-auto uk-first-column">
                                 <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5ec215fed38c4d0019c9c66f_tra-Oi-Hong.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
                               </div>
@@ -364,7 +260,7 @@ body{
                         <!---->
                         <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
                           <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
+                            <div class="uk-grid-medium uk-flex-top uk-grid">
                               <div class="uk-width-auto uk-first-column">
                                 <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5ec215fed38c4d0019c9c670_tra-Thom-Dao.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
                               </div>
@@ -383,14 +279,14 @@ body{
                         <!---->
                         <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
                           <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
+                            <div class="uk-grid-medium uk-flex-top uk-grid">
                               <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e92fd7dc788bc0011abaa06_trasuamacca.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
+                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5ec215fed38c4d0019c9c670_tra-Thom-Dao.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
                               </div>
                               <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Sữa Mắc Ca Trân Châu Trắng</b></a>
+                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Thơm Một Cái</b></a>
                                 </p>
-                                <p class="uk-margin-remove uk-text-meta">Đổi vị tươi mới - Vừa ngon vừa khoẻ Mỗi ngày với Nhà sẽ là điều tươi mới hơn với sữa hạt mắc ca thơm ngon, bổ dưỡng quyện cùng nền trà Oolong cho vị cân bằng, ngọt dịu. Trân châu trắng giòn dai được thêm sẵn, mang lại cho bạn cảm giác "đã" trong từng ngụm, thoả cơn thèm trà sữa ngay.</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
+                                <p class="uk-margin-remove uk-text-meta">Hương vị giải nhiệt tươi mới Sự kết hợp sáng tạo của trà thơm (dứa) ngọt dịu, với topping đào dầm vừa quen vừa lạ - cho hương vị giải nhiệt và cực kì vui miệng, giúp cuộc hẹn hò của bạn thêm mát, thêm rôm rả hơn.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
                               </div>
                             </div>
                             <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
@@ -402,299 +298,14 @@ body{
                         <!---->
                         <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
                           <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
+                            <div class="uk-grid-medium uk-flex-top uk-grid">
                               <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd6723a3_cfsd.png" width="80" height="80" alt="" class="uk-comment-avatar">
+                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5ec215fed38c4d0019c9c670_tra-Thom-Dao.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
                               </div>
                               <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cà Phê Sữa Đá</b></a>
+                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Thơm Một Cái</b></a>
                                 </p>
-                                <p class="uk-margin-remove uk-text-meta">Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.</p> <a class="uk-link-reset">29.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67237b_caramelmac.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Caramel Macchiato Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vị thơm béo của bọt sữa và sữa tươi, vị đắng thanh thoát của cà phê Espresso hảo hạng, và vị ngọt đậm của sốt caramel.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d43be2e41d3ac39a44bd7a2_IMAGE%202019-08-02%2011%3A39%3A04.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Phúc Bồn Tử</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Lần đầu tiên Trà Oolong và trái "Phúc Bồn Tử" hoàn toàn tự nhiên, được kết hợp để tạo ra một dư vị hoàn toàn tươi mới. Nhấp ngay một ngụm là thấy mát lạnh ngay tức khắc, đọng lại mãi nơi cuốn họng là hương vị trà thơm lừng và vị ngọt thanh, chua dịu khó quên của trái phúc bồn tử.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67239c_tradao.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Đào Cam Sả - Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vị thanh ngọt của đào Hy Lạp, vị chua dịu của Cam Vàng nguyên vỏ, vị chát của trà đen tươi được ủ mới mỗi 4 tiếng, cùng hương thơm nồng đặc trưng của sả chính là điểm sáng làm nên sức hấp dẫn của thức uống này.</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/Xjh9E850NsEjs4f1vHBpiEkfh2o2fOeJHl2kuICY.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Đen Macchiato</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Trà đen được ủ mới mỗi ngày, giữ nguyên được vị chát mạnh mẽ đặc trưng của lá trà, phủ bên trên là lớp Macchiato "homemade" bồng bềnh quyến rũ vị phô mai mặn mặn mà béo béo.</p> <a class="uk-link-reset">42.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d92fbc89e12b47db8cabbdc_IMAGE%202019-10-04%2009%3A32%3A25.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Xoài Macchiato - Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Mang trên mình sắc vàng óng ánh của hương xoài thơm lừng, hòa cùng lớp thanh mát của vị trà đen tinh túy, phía trên được phủ thêm 1 lớp foam macchiato béo ngậy, để mang đến cho bạn một thức uống khoan khoái và dậy lên từng phong vị chua, béo, ngọt đầy ấn tượng. Một ngày thật là vàng tươi và tràn đầy sức sống cùng Trà Xoài Macchiato, tại sao không?</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d43bf5d073b26002948a362_Phu%CC%81c%20Bo%CC%82%CC%80n%20Tu%CC%9B%CC%89%20Cam%20%C4%90a%CC%81%20Xay.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Phúc Bồn Tử Cam Đá Xay</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Tê tái ngay đầu lưỡi bởi sự mát lạnh của đá xay. Hòa quyện thêm hương vị chua chua, ngọt ngọt từ trái cam tươi và trái phúc bồn tử 100% tự nhiên, để cho ra một hương vị thanh mát, kích thích vị giác đầy thú vị ngay từ lần đầu thưởng thức.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e4f9e4316bd0a0018d2e24e_Cf%20%C4%91%C3%A1%20xay.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cà Phê Đá Xay-Lạnh</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Một phiên bản "upgrade" từ ly cà phê sữa quen thuộc, nhưng lại tỉnh táo và tươi mát hơn bởi lớp đá xay đi kèm. Nhấp 1 ngụm là thấy đã, ngụm thứ hai thêm tỉnh táo và cứ thế lôi cuốn bạn đến giọt cuối cùng.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/taVqROhnhyyZ05Nj8k3ZidcJ9nPiH7WuIWXjAHOP.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Sinh Tố Cam Xoài</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vị mứt cam xoài hòa trộn độc đáo với sữa chua, cho cảm giác chua ngọt rất sướng. Điểm nhấn là những mẩu bánh cookie giòn tan giúp sự thưởng thức thêm thú vị.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/cjFfxh5WemEHDV9gSUc8xNk4BVAtZBXPkIJTG8Fe.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Sinh Tố Việt Quất</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Mứt Việt Quất chua thanh, ngòn ngọt, phối hợp nhịp nhàng với dòng sữa chua bổ dưỡng. Là món sinh tố thơm ngon mà cả đầu lưỡi và làn da đều thích.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/4JFY9rkBd1jjrVGQ5dwAK4eX8ZhACPBurJ62pDaI.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Matcha Latte Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Với màu xanh mát mắt của bột trà Matcha, vị ngọt nhẹ nhàng, pha trộn cùng sữa tươi và lớp foam mềm mịn, Matcha Latte là thức uống yêu thích của tất cả mọi người khi ghé The Coffee House.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/I164lcfIlZhxDwJkkjZIHQ2VzJYYtxYZj2UHHmAc.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Mocha Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cà phê Mocha được ví von đơn giản là Sốt Sô cô la được pha cùng một tách Espresso.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672398_mocha_da.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Mocha Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cà phê Mocha được ví von đơn giản là Sốt Sô cô la được pha cùng một tách Espresso.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/kQ4ZrGDaGnhRWJ1efI7gRjEO1lG1LEblXo3BWkhW.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Espresso Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">cà phê máy sử dụng tỷ lệ trộn 70% Arabica và 30% Robusta, cà phê nguyện chất chiết suất từ máy dưới áp suất cao, hương thơm mạnh và chua nhẹ từ hạt, vị đậm đà của hạt robusta, hàm lượng cafein thấp do tính chất của hạt Arabica</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/L5MLs7kvde6ZMS4m1G6j0uoLtd13MP12LPadIoPN.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Espresso Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Một cốc Espresso nguyên bản được bắt đầu bởi những hạt Arabica chất lượng, phối trộn với tỉ lệ cân đối hạt Robusta, cho ra vị ngọt caramel, vị chua dịu và sánh đặc. Để đạt được sự kết hợp này, chúng tôi xay tươi hạt cà phê cho mỗi lần pha.</p> <a class="uk-link-reset">40.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/59N46ec9zJ6mAqeTMegOh1629gh2CIjRJAfZZBrj.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Socola Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cacao nguyên chất hoà cùng sữa tươi béo ngậy. Vị ngọt tự nhiên, không gắt cổ, để lại một chút đắng nhẹ, cay cay trên đầu lưỡi.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
+                                <p class="uk-margin-remove uk-text-meta">Hương vị giải nhiệt tươi mới Sự kết hợp sáng tạo của trà thơm (dứa) ngọt dịu, với topping đào dầm vừa quen vừa lạ - cho hương vị giải nhiệt và cực kì vui miệng, giúp cuộc hẹn hò của bạn thêm mát, thêm rôm rả hơn.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
                               </div>
                             </div>
                             <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
@@ -705,16 +316,16 @@ body{
                     </ul>
                   </div>
                 </div>
-                <div data-v-300db8a7="" id="cate1" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <ul data-v-300db8a7="" class="uk-list">
+                <div id="cate1" class="menu">
+                  <div class="uk-width-1-1">
+                    <ul class="uk-list">
                       <li>
                         <label>Cà phê</label>
                         <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
                           <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
+                            <div class="uk-grid-medium uk-flex-top uk-grid">
                               <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd6723a3_cfsd.png" width="80" height="80" alt="" class="uk-comment-avatar">
+                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e4f9e4316bd0a0018d2e24e_Cf%20%C4%91%C3%A1%20xay.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
                               </div>
                               <div class="uk-width-expand" style="padding-left: 10px;">
                                 <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cà Phê Sữa Đá</b></a>
@@ -731,45 +342,7 @@ body{
                         <!---->
                         <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
                           <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/fhSlmMuOUgBJe8X1r61rpTYCDclCblEEzchCm1DY.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Bạc Xỉu</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Theo chân những người gốc Hoa đến định cư tại Sài Gòn, Bạc sỉu là cách gọi tắt của "Bạc tẩy xỉu phé" trong tiếng Quảng Đông, chính là: Ly sữa trắng kèm một chút cà phê.</p> <a class="uk-link-reset">29.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67237b_caramelmac.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Caramel Macchiato Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vị thơm béo của bọt sữa và sữa tươi, vị đắng thanh thoát của cà phê Espresso hảo hạng, và vị ngọt đậm của sốt caramel.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
+                            <div class="uk-grid-medium uk-flex-top uk-grid">
                               <div class="uk-width-auto uk-first-column">
                                 <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e4f9e4316bd0a0018d2e24e_Cf%20%C4%91%C3%A1%20xay.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
                               </div>
@@ -784,1232 +357,82 @@ body{
                           </header>
                         </article>
                       </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5ca47f92acf0d3492076b298_ColBrewCamSa_1x1.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cold Brew Cam Sả</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Tươi mát - Mượt mà, là sự kết hợp đầy mới mẻ khi hương vị của cam và sả được cân bằng trên nền của những nốt hương cà phê pha lạnh.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672391_IMAGE%202019-09-09%2014%3A23%3A25.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Latte Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Latte là một sự kết hợp tinh tế giữa lớp nền Espresso hảo hạng và sữa tươi (nhiều hơn so với Cappucino) - mang đến sự cân bằng, nhẹ nhàng trong hương vị.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e4f9e4316bd0a0018d2e24d_Tr%C3%A0%20Cf%20%C4%91%C3%A1%20xay.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Cà Phê Đá Xay - Lạnh</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Hấp dẫn trên từng nấc hương vị, là nốt hương đầu thanh thoát của lớp cà phê hảo hạng, sau đó là thanh vị tươi mát của lớp trà oolong đi kèm - tuy mới lạ, nhưng chiều lòng những tâm hồn yêu cà phê.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d92fbc89e12b47db8cabbdb_IMAGE%202019-10-04%2009%3A33%3A51.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cold Brew Sữa Tươi Macchiato</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cold Brew Sữa Tươi Macchiato - hương vị cà phê vừa quen vừa lạ. Quen bởi vị đăng đắng và ngọt dịu của Cold Brew, thức uống ""Signature"" của Nhà. Lạ bởi phong vị ngọt ngào của lớp sữa tươi và lớp foam macchiato beo béo được đánh lên sánh mịn. Khác với cách thưởng thức Macchiato thông thường. Với thức uống này, hãy thử khuấy đều để cho vị đắng, vị ngọt hòa quyện lại với nhau và nhấp liền 1 ngụm để cảm nhận hết hương vị cà phê có phần nhẹ nhàng này nhé!</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5ca47f92acf0d3492076b29a_Classic_1x1.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cold Brew Truyền Thống</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Nguyên bản và Tươi mới với hương gỗ thông, hạt dẻ, nốt sô cô la đặc trưng, hương khói nhẹ của hạt Arabica Cầu Đất.</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5ca47f92acf0d3492076b299_ColdBrewMilk_1x1.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cold Brew Sữa Tươi</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Thanh mát và cân bằng với hương vị cà phê nguyên bản 100% Arabica Cầu Đất cùng sữa tươi thơm béo cho từng ngụm tròn vị, hấp dẫn.</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/SDMMOgPAaP1NgomKl6TcurhWAWRm2I1W0gEePsQS.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Americano Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Americano được pha chế bằng cách thêm nước vào một hoặc hai shot Espresso để pha loãng độ đặc của cà phê, từ đó mang lại hương vị nhẹ nhàng, không gắt mạnh và vẫn thơm nồng nàn.</p> <a class="uk-link-reset">40.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/fNdmBECwD4F6GAu4uJq5xTzRSO5gSIkew1c7y4BS.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Americano Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Americano được pha chế bằng cách thêm nước vào một hoặc hai shot Espresso để pha loãng độ đặc của cà phê, từ đó mang lại hương vị nhẹ nhàng, không gắt mạnh và vẫn thơm nồng nàn.</p> <a class="uk-link-reset">40.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/XuEq9URO2lPZE1mxDMn4RY0FO9sx5Dppol3cQPsC.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cappucino Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cappuccino được gọi vui là thức uống "một-phần-ba" - 1/3 Espresso, 1/3 Sữa nóng, 1/3 Foam.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672378_Cappuccino_da.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cappuchino Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cappuccino được gọi vui là thức uống "một-phần-ba" - 1/3 Espresso, 1/3 Sữa nóng, 1/3 Foam.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/xny0uGh7d77Xu9lalgRJ4STpjW8PSSQqWObTY8xF.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Caramel Macchiato Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vị thơm béo của bọt sữa và sữa tươi, vị đắng thanh thoát của cà phê Espresso hảo hạng, và vị ngọt đậm của sốt caramel.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/Y8FeEBo6jkmu6ErE6lxDvT8bgkVRcyHuEMOF7wD7.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Latte Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Khi chuẩn bị Latte, cà phê Espresso và sữa nóng được trộn lẫn vào nhau, bên trên vẫn là lớp foam nhưng mỏng và nhẹ hơn Cappucinno.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/I164lcfIlZhxDwJkkjZIHQ2VzJYYtxYZj2UHHmAc.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Mocha Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cà phê Mocha được ví von đơn giản là Sốt Sô cô la được pha cùng một tách Espresso.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd672398_mocha_da.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Mocha Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cà phê Mocha được ví von đơn giản là Sốt Sô cô la được pha cùng một tách Espresso.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/zuQj80ILAewzzxjnKTyKQSJif1HPXKG0ipR0tfx6.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cà Phê Đen Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Một tách cà phê đen thơm ngào ngạt, phảng phất mùi cacao là món quà tự thưởng tuyệt vời nhất cho những ai mê đắm tinh chất nguyên bản nhất của cà phê. Một tách cà phê trầm lắng, thi vị giữa dòng đời vồn vã.</p> <a class="uk-link-reset">35.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/9Lvq4nzmqmeUIOnsurxK0z2JrxOrmot5imMgtq6M.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cà Phê Đen Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Một tách cà phê đen thơm ngào ngạt, phảng phất mùi cacao là món quà tự thưởng tuyệt vời nhất cho những ai mê đắm tinh chất nguyên bản nhất của cà phê. Một tách cà phê trầm lắng, thi vị giữa dòng đời vồn vã.</p> <a class="uk-link-reset">29.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/8WAqWR7zl3vOboc8DFNuBZCzbYdspCpBlLhoTMUi.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cà Phê Sữa Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cà phê phin kết hợp cũng sữa đặc là một sáng tạo đầy tự hào của người Việt, được xem món uống thương hiệu của Việt Nam.</p> <a class="uk-link-reset">35.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/kQ4ZrGDaGnhRWJ1efI7gRjEO1lG1LEblXo3BWkhW.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Espresso Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">cà phê máy sử dụng tỷ lệ trộn 70% Arabica và 30% Robusta, cà phê nguyện chất chiết suất từ máy dưới áp suất cao, hương thơm mạnh và chua nhẹ từ hạt, vị đậm đà của hạt robusta, hàm lượng cafein thấp do tính chất của hạt Arabica</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/L5MLs7kvde6ZMS4m1G6j0uoLtd13MP12LPadIoPN.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Espresso Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Một cốc Espresso nguyên bản được bắt đầu bởi những hạt Arabica chất lượng, phối trộn với tỉ lệ cân đối hạt Robusta, cho ra vị ngọt caramel, vị chua dịu và sánh đặc. Để đạt được sự kết hợp này, chúng tôi xay tươi hạt cà phê cho mỗi lần pha.</p> <a class="uk-link-reset">40.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5cdbd6e8696fb3792a389754_photo_2019-07-11_12-51-25.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Bạc Xỉu Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Bạc xỉu nóng</p> <a class="uk-link-reset">35.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d43bfed073b26003161b693_IMAGE%202019-08-02%2011%3A45%3A20.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cold Brew Phúc Bồn Tử</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vị chua ngọt của trái phúc bồn tử, làm dậy lên hương vị trái cây tự nhiên vốn sẵn có trong hạt cà phê, hòa quyện thêm vị đăng đắng, ngọt dịu nhẹ nhàng của Cold Brew mang đến cách thưởng thức cà phê hoàn toàn mới và đầy thú vị.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
                     </ul>
                   </div>
                 </div>
-                <div data-v-300db8a7="" id="cate10" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate2" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <ul data-v-300db8a7="" class="uk-list">
-                      <li>
-                        <label>Thức uống đá xay</label>
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d43bf5d073b26002948a362_Phu%CC%81c%20Bo%CC%82%CC%80n%20Tu%CC%9B%CC%89%20Cam%20%C4%90a%CC%81%20Xay.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Phúc Bồn Tử Cam Đá Xay</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Tê tái ngay đầu lưỡi bởi sự mát lạnh của đá xay. Hòa quyện thêm hương vị chua chua, ngọt ngọt từ trái cam tươi và trái phúc bồn tử 100% tự nhiên, để cho ra một hương vị thanh mát, kích thích vị giác đầy thú vị ngay từ lần đầu thưởng thức.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e4f9e4316bd0a0018d2e24e_Cf%20%C4%91%C3%A1%20xay.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cà Phê Đá Xay-Lạnh</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Một phiên bản "upgrade" từ ly cà phê sữa quen thuộc, nhưng lại tỉnh táo và tươi mát hơn bởi lớp đá xay đi kèm. Nhấp 1 ngụm là thấy đã, ngụm thứ hai thêm tỉnh táo và cứ thế lôi cuốn bạn đến giọt cuối cùng.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/HOlc6LGTYBrh0K6fFndZKwdAeXaZcY538jM7JiVO.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Cookie Đá Xay</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Những mẩu bánh cookies giòn rụm kết hợp ăn ý với sữa tươi và kem tươi béo ngọt, đem đến cảm giác lạ miệng gây thích thú. Một món uống phá cách dễ thương.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d2bdfa5acf0d30ba264432b_Dao.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Đào Việt Quất Đá Xay</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vẫn vị đào quen thuộc nhưng được khoác lên mình một vẻ đầy thanh mát và giải khát hơn.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/JdcEFIZHjILe8tYObxrQ8S6BzHcdvTnrOtALFoqo.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Chocolate Đá Xay</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Sữa và kem tươi béo ngọt được “cá tính hoá” bởi vị chocolate đăng đắng. Dành cho các tín đồ hảo ngọt. Lựa chọn hàng đầu nếu bạn đang cần chút năng lượng tinh thần để thúc đẩy nhịp sống.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e4f9e4316bd0a0018d2e24d_Tr%C3%A0%20Cf%20%C4%91%C3%A1%20xay.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Cà Phê Đá Xay - Lạnh</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Hấp dẫn trên từng nấc hương vị, là nốt hương đầu thanh thoát của lớp cà phê hảo hạng, sau đó là thanh vị tươi mát của lớp trà oolong đi kèm - tuy mới lạ, nhưng chiều lòng những tâm hồn yêu cà phê.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d2bdfa5acf0d30ba264432a_OiHong.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Ổi Hồng Việt Quất Đá Xay</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Hương ổi ngọt tự nhiên và thanh mát, được khéo léo "xuyến" nhẹ thêm những tầng hương của mùa hè dịu mát: cam, lớp mixed berry, whipping cream.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/vPWEITCzmAgFYLmr6gIZZPLz1EQ6SZGVXN02mMBj.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Matcha Đá Xay</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Matcha thanh, nhẫn, và đắng nhẹ được nhân đôi sảng khoái khi uống lạnh. Nhấn nhá thêm những nét bùi béo của kem và sữa. Gây thương nhớ vô cùng!</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5cdb677aacf0d33b682b4b73_chanhday_1x1.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Chanh Sả Đá Xay</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Sự kết hợp giữa chanh, sả thơm lừng và đá đem lại cảm giác mát lạnh xua tan nóng bức của mùa hè.</p> <a class="uk-link-reset">49.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate3" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate5" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <ul data-v-300db8a7="" class="uk-list">
-                      <li>
-                        <label>Trà trái cây</label>
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5ec215fed38c4d0019c9c66f_tra-Oi-Hong.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Gần Nhau Hơn</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Tưới mát ngày hè Nổi bật với vị ổi hồng thơm đặc trưng và nền trà thanh mát, nhấp 1 ngụm là thấy khoan khoái mát cả người, đặc biệt là có sẵn trân châu trắng dai giòn, cho câu chuyện của bạn dài hơn, thú vị hơn.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5ec215fed38c4d0019c9c670_tra-Thom-Dao.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Thơm Một Cái</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Hương vị giải nhiệt tươi mới Sự kết hợp sáng tạo của trà thơm (dứa) ngọt dịu, với topping đào dầm vừa quen vừa lạ - cho hương vị giải nhiệt và cực kì vui miệng, giúp cuộc hẹn hò của bạn thêm mát, thêm rôm rả hơn.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d43be2e41d3ac39a44bd7a2_IMAGE%202019-08-02%2011%3A39%3A04.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Phúc Bồn Tử</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Lần đầu tiên Trà Oolong và trái "Phúc Bồn Tử" hoàn toàn tự nhiên, được kết hợp để tạo ra một dư vị hoàn toàn tươi mới. Nhấp ngay một ngụm là thấy mát lạnh ngay tức khắc, đọng lại mãi nơi cuốn họng là hương vị trà thơm lừng và vị ngọt thanh, chua dịu khó quên của trái phúc bồn tử.</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5b03966a1acd4d5bbd67239c_tradao.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Đào Cam Sả - Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vị thanh ngọt của đào Hy Lạp, vị chua dịu của Cam Vàng nguyên vỏ, vị chát của trà đen tươi được ủ mới mỗi 4 tiếng, cùng hương thơm nồng đặc trưng của sả chính là điểm sáng làm nên sức hấp dẫn của thức uống này.</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e0586a4eebc600011ddef5c_Tra%CC%80%20bu%CC%9Bo%CC%9B%CC%89i_la%CC%A3nh.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Bưởi Mật Ong</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Trà bưởi mật ong</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/trasennong.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Oolong Hạt Sen - Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Trà Oolong Sen nóng sẽ dậy hơn mùi thơm của trà và hạt sen. Trà có vị ngọt dịu nhẹ, rất tốt cho sức khoẻ và giúp giữ ấm cơ thể. Sản phẩm có vị trà nhẹ nhàng vừa phải, có thể dùng được cả cho buổi sáng và chiều tối.</p> <a class="uk-link-reset">52.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e0586a4eebc600011ddef5b_Tra%CC%80%20bu%CC%9Bo%CC%9B%CC%89i_no%CC%81ng.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Bưởi Mật Ong - Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Trà bưởi mật ong - nóng</p> <a class="uk-link-reset">55.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5c3ff3c5acf0d338d22adbac_2020-04-14%2017.27.35.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Oolong Vải - Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Là sự kết hợp của trà Oolong và trái vải quen thuộc. Là món uống thanh mát, dịu nhẹ rất dễ sử dụng bởi sự hoà quyện của vị chua thanh của vải, hậu vị ngọt kéo dài của trà oolong. Ngoài ra trong mỗi ly nước còn có thêm trái vải dùng kèm. Sản phẩm có vị trà nhẹ nhàng vừa phải, có thể dùng được cả cho buổi sáng và chiều tối.</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/HkfSRgeiDPCi8EzHwFW3SX7hXVdcVGHaiIwNLGcZ.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Đào Cam Sả - Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vị thanh ngọt của đào Hy Lạp, vị chua dịu của Cam Vàng nguyên vỏ, vị chát của trà đen tươi được ủ mới mỗi 4 tiếng, cùng hương thơm nồng đặc trưng của sả</p> <a class="uk-link-reset">52.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5c3ff3c5acf0d338d22adbad_tra%20vai%20nong.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Oolong Vải  - Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Là sự kết hợp của trà Oolong và trái vải quen thuộc. Nhâm nhi từng ngụm trà nóng khách hàng sẽ trải nghiệm trọn vẹn hơn mùi thơm dậy của vải. Vị ngọt thanh, chua nhẹ của sản phẩm vẫn được giữ nguyên rất dễ uống. Sản phẩm có vị trà nhẹ nhàng vừa phải, có thể dùng được cả cho buổi sáng và chiều tối.</p> <a class="uk-link-reset">52.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/trasen_29e9b22739f941ff84671361ae53f3dd_large.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Oolong Hạt Sen - Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Trà Oolong và hạt Sen đều là những thành phần tốt cho sức khoẻ với công dụng thanh lọc cơ thể, giải nhiệt và làm đẹp. Trà Oolong Sen An nhiên có vị thanh mát của trà và sen, vị ngọt dịu kết hợp cùng chút béo thơm của cream cheese và hạt sen tươi mềm ăn kèm. Sản phẩm có vị trà nhẹ nhàng vừa phải, có thể dùng được cả cho buổi sáng và chiều tối.</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/storage_image/114_xoai%20nong%20mac.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Xoài Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Trà Xoài Nóng</p> <a class="uk-link-reset">55.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate6" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <ul data-v-300db8a7="" class="uk-list">
-                      <li>
-                        <label>Thức uống trái cây</label>
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/taVqROhnhyyZ05Nj8k3ZidcJ9nPiH7WuIWXjAHOP.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Sinh Tố Cam Xoài</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Vị mứt cam xoài hòa trộn độc đáo với sữa chua, cho cảm giác chua ngọt rất sướng. Điểm nhấn là những mẩu bánh cookie giòn tan giúp sự thưởng thức thêm thú vị.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/cjFfxh5WemEHDV9gSUc8xNk4BVAtZBXPkIJTG8Fe.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Sinh Tố Việt Quất</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Mứt Việt Quất chua thanh, ngòn ngọt, phối hợp nhịp nhàng với dòng sữa chua bổ dưỡng. Là món sinh tố thơm ngon mà cả đầu lưỡi và làn da đều thích.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate4" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <ul data-v-300db8a7="" class="uk-list">
-                      <li>
-                        <label>Macchiato</label>
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e92fd7dc788bc0011abaa06_trasuamacca.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Sữa Mắc Ca Trân Châu Trắng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Đổi vị tươi mới - Vừa ngon vừa khoẻ Mỗi ngày với Nhà sẽ là điều tươi mới hơn với sữa hạt mắc ca thơm ngon, bổ dưỡng quyện cùng nền trà Oolong cho vị cân bằng, ngọt dịu. Trân châu trắng giòn dai được thêm sẵn, mang lại cho bạn cảm giác "đã" trong từng ngụm, thoả cơn thèm trà sữa ngay.</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/Xjh9E850NsEjs4f1vHBpiEkfh2o2fOeJHl2kuICY.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Đen Macchiato</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Trà đen được ủ mới mỗi ngày, giữ nguyên được vị chát mạnh mẽ đặc trưng của lá trà, phủ bên trên là lớp Macchiato "homemade" bồng bềnh quyến rũ vị phô mai mặn mặn mà béo béo.</p> <a class="uk-link-reset">42.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/W61OhyyLoOFAnERi8RvNO55xG9aYPDCfgpzome1d.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Matcha Macchiato</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Bột trà xanh Matcha thơm lừng hảo hạng cùng lớp Macchiato béo ngậy là một sự kết hợp tuyệt vời.</p> <a class="uk-link-reset">45.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d92fbc89e12b47db8cabbdc_IMAGE%202019-10-04%2009%3A32%3A25.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Xoài Macchiato - Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Mang trên mình sắc vàng óng ánh của hương xoài thơm lừng, hòa cùng lớp thanh mát của vị trà đen tinh túy, phía trên được phủ thêm 1 lớp foam macchiato béo ngậy, để mang đến cho bạn một thức uống khoan khoái và dậy lên từng phong vị chua, béo, ngọt đầy ấn tượng. Một ngày thật là vàng tươi và tràn đầy sức sống cùng Trà Xoài Macchiato, tại sao không?</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5e4f9e4316bd0a0018d2e251_Tr%C3%A0%20l%C3%A0i%20Machiatto.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Lài Macchiato - Lạnh</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Ngay ngụm đầu tiên chính là vị beo béo ngọt dịu của lớp macchiato, sau đó được cân bằng lại bởi lớp thanh mát từ nền trà oolong hảo hạng - 1 hương vị tươi mới cho team hảo ngọt nhưng thích thanh mát.</p> <a class="uk-link-reset">42.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d92fbc89e12b47db8cabbdd_IMAGE%202019-10-04%2009%3A33%3A25.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Cherry Macchiato</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Khoác lên mình một ngoại hình tràn đầy năng lượng với sắc đỏ rực rỡ của Cherry chín mọng, kết hợp với nền trà oolong hảo hạng và lớp foam sánh mịn, để mang đến cho bạn 1 hòa vị đỉnh cao của sự thanh mát, cùng chút beo béo và dư vị ngọt ngào miễn chê. Hãy khởi động cho 1 ngày tràn đầy rực rỡ, bằng thức uống ""xịn sò"" này nhé!</p> <a class="uk-link-reset">50.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate7" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <ul data-v-300db8a7="" class="uk-list">
-                      <li>
-                        <label>Thức ăn nhẹ</label>
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5c8abfcaacf0d34ef273cfe4_%C4%90ie%CC%82%CC%80u%20Va%CC%80ng.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Điều Vàng Rang Muối</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Hạt điều vị vừa bùi, vừa mặn được rang với tỉ lệ được cân chỉnh để vẫn giữ được độ giòn.</p> <a class="uk-link-reset">20.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5c8abfcaacf0d34ef273cfe5_%C4%90a%CC%A3%CC%82u%20pho%CC%A3%CC%82ng.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Đậu Phộng Tỏi Ớt</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Đậu phộng béo được áo thêm lớp tỏi ớt mặn mặn, ngọt ngọt và chút cay cay. Vừa nhâm nhi với trà hay món nước mát lạnh nữa là đúng bài, ăn hoài không ngán.</p> <a class="uk-link-reset">10.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/5d2c4af1696fb3281b3f4ab9_Mi%CC%81t%2520Sa%CC%82%CC%81y.jpg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Mít Sấy</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Mít sấy khô vàng ươm giòn rụm, khi ăn vẫn giữ nguyên được vị ngọt lịm của mít tươi.</p> <a class="uk-link-reset">20.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate8" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate11" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate12" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate14" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate15" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <ul data-v-300db8a7="" class="uk-list">
-                      <li>
-                        <label>Choco-Matcha</label>
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/44psguVqEQvWfwHm2IPxOx8J5Tt4QDjinkrMaDm0.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Matcha Latte Nóng</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Với màu xanh mát mắt của bột trà Matcha, vị ngọt nhẹ nhàng, pha trộn cùng sữa tươi và lớp foam mềm mịn, Matcha Latte là thức uống yêu thích của tất cả mọi người khi ghé The Coffee House.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/4JFY9rkBd1jjrVGQ5dwAK4eX8ZhACPBurJ62pDaI.jpeg" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Trà Matcha Latte Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Với màu xanh mát mắt của bột trà Matcha, vị ngọt nhẹ nhàng, pha trộn cùng sữa tươi và lớp foam mềm mịn, Matcha Latte là thức uống yêu thích của tất cả mọi người khi ghé The Coffee House.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                      <li>
-                        <!---->
-                        <article class="uk-comment uk-visible-toggle product-menu" style="background-color: white; padding: 12px;">
-                          <header class="uk-position-relative">
-                            <div uk-grid="" class="uk-grid-medium uk-flex-top uk-grid">
-                              <div class="uk-width-auto uk-first-column">
-                                <img src="https://tchmobileapp.s3.ap-southeast-1.amazonaws.com/menufrontend/59N46ec9zJ6mAqeTMegOh1629gh2CIjRJAfZZBrj.png" width="80" height="80" alt="" class="uk-comment-avatar">
-                              </div>
-                              <div class="uk-width-expand" style="padding-left: 10px;">
-                                <p class="uk-margin-remove"><a class="uk-link-reset"><b>Socola Đá</b></a>
-                                </p>
-                                <p class="uk-margin-remove uk-text-meta">Cacao nguyên chất hoà cùng sữa tươi béo ngậy. Vị ngọt tự nhiên, không gắt cổ, để lại một chút đắng nhẹ, cay cay trên đầu lưỡi.</p> <a class="uk-link-reset">59.000&nbsp;₫</a>
-                              </div>
-                            </div>
-                            <div class="uk-position-bottom-right"><span uk-icon="icon: plus-circle; ratio: 1.5" class="uk-text-primary uk-icon"><svg width="30" height="30" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <circle fill="none" stroke="#000" stroke-width="1.1" cx="9.5" cy="9.5" r="9"></circle> <line fill="none" stroke="#000" x1="9.5" y1="5" x2="9.5" y2="14"></line> <line fill="none" stroke="#000" x1="5" y1="9.5" x2="14" y2="9.5"></line></svg></span>
-                            </div>
-                          </header>
-                        </article>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate16" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate17" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate18" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" id="cate19" class="menu">
-                  <div data-v-300db8a7="" class="uk-width-1-1">
-                    <!---->
-                  </div>
-                </div>
-                <div data-v-300db8a7="" uk-grid="" class="uk-grid-small uk-flex uk-flex-center uk-text-center uk-grid uk-grid-stack" style="display: none;">
-                  <div data-v-300db8a7="" class="uk-width-1-2">
-                    <img data-v-300db8a7="" src="/img/search.png" alt="" uk-img="">
-                    <h3 data-v-300db8a7="" style="margin-top: 0px;"><span data-v-300db8a7="" class="uk-text-primary uk-text-bold">Rất tiếc chúng tôi không tìm
+                <div class="uk-grid-small uk-flex uk-flex-center uk-text-center uk-grid uk-grid-stack" style="display: none;">
+                  <div class="uk-width-1-2">
+                    <img src="/img/search.png" alt="" uk-img="">
+                    <h3 style="margin-top: 0px;"><span class="uk-text-primary uk-text-bold">Rất tiếc chúng tôi không tìm
                                         thấy sản phẩm!</span></h3>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div data-v-300db8a7="" class="uk-width-1-3@l uk-width-1-1@m">
-            <div data-v-300db8a7="" class="uk-position-fixed uk-position-bottom uk-position-z-index uk-overlay uk-overlay-default uk-padding-remove uk-hidden@l" style="margin-bottom: 20px; height: 28px;">
-              <nav data-v-300db8a7="" uk-navbar="" class="uk-navbar-container uk-navbar" style="position: relative; z-index: 980;">
-                <button data-v-300db8a7="" type="button" class="tch-text-white tch-text-bold uk-button uk-button-primary uk-width-1-1 uk-padding-remove-left uk-padding-remove-right">
-                  <div data-v-300db8a7="" uk-grid="" class="uk-grid-small uk-grid uk-grid-stack">
-                    <div data-v-300db8a7="" class="tch-text-white uk-width-1-3">1 MÓN</div>
-                    <div data-v-300db8a7="" class="tch-text-white uk-width-1-3">GIỎ HÀNG</div>
-                    <div data-v-300db8a7="" class="tch-text-white uk-width-1-3">60.000&nbsp;₫</div>
+          <div class="uk-width-1-3@l uk-width-1-1@m">
+            <div class="uk-position-fixed uk-position-bottom uk-position-z-index uk-overlay uk-overlay-default uk-padding-remove uk-hidden@l" style="margin-bottom: 20px; height: 28px;">
+              <nav uk-navbar="" class="uk-navbar-container uk-navbar" style="position: relative; z-index: 980;">
+                <button type="button" class="tch-text-white tch-text-bold uk-button uk-button-primary uk-width-1-1 uk-padding-remove-left uk-padding-remove-right">
+                  <div class="uk-grid-small uk-grid uk-grid-stack">
+                    <div class="tch-text-white uk-width-1-3">1 MÓN</div>
+                    <div class="tch-text-white uk-width-1-3">GIỎ HÀNG</div>
+                    <div class="tch-text-white uk-width-1-3">60.000&nbsp;₫</div>
                   </div>
                 </button>
               </nav>
             </div>
-            <div data-v-300db8a7="" class="uk-visible@l">
-              <div data-v-2c4ae852="" data-v-300db8a7="">
-                <div data-v-2c4ae852="" id="container_sticky" class="uk-card uk-card-default uk-card-body uk-card-small uk-padding-remove uk-sticky" style="z-index: 0;">
-                  <div data-v-2c4ae852="" class="uk-card-header uk-visible@l">
-                    <button data-v-2c4ae852="" type="button" class="tch-text-bold uk-button uk-button-primary uk-width-1-1 uk-padding-remove-left uk-padding-remove-right">XEM GIỎ HÀNG
+            <div class="uk-visible@l">
+              <div>
+                <div id="container_sticky" class="uk-card uk-card-default uk-card-body uk-card-small uk-padding-remove uk-sticky" style="z-index: 0;">
+                  <div class="uk-card-header uk-visible@l">
+                    <button type="button" class="tch-text-bold uk-button uk-button-primary uk-width-1-1 uk-padding-remove-left uk-padding-remove-right">XEM GIỎ HÀNG
                       <!---->
                     </button>
                   </div>
-                  <div data-v-2c4ae852="" class="cart-sticky">
-                    <div data-v-2c4ae852="">
-                      <div data-v-2c4ae852="" class="uk-card-body">
-                        <div data-v-2c4ae852="" uk-grid="" class="uk-grid-small uk-padding-remove-bottom uk-grid" style="cursor: pointer;">
-                          <div data-v-2c4ae852="" class="tch-text-bold uk-text-center uk-width-auto uk-first-column"><span data-v-2c4ae852="" class="uk-label uk-label-warning ">1</span>
+                  <div class="cart-sticky">
+                    <div>
+                      <div class="uk-card-body">
+                        <div class="uk-grid-small uk-padding-remove-bottom uk-grid" style="cursor: pointer;">
+                          <div class="tch-text-bold uk-text-center uk-width-auto uk-first-column"><span class="uk-label uk-label-warning ">1</span>
                           </div>
-                          <dl data-v-2c4ae852="" class="uk-description-list uk-width-expand">
-                            <dd data-v-2c4ae852="" class="tch-text-bold">Trà Gần Nhau Hơn</dd>
-                            <dd data-v-2c4ae852="" class="uk-text-small"><span data-v-2c4ae852="">Lớn </span> 
+                          <dl class="uk-description-list uk-width-expand">
+                            <dd class="tch-text-bold">Trà Gần Nhau Hơn</dd>
+                            <dd class="uk-text-small"><span>Lớn </span> 
                             </dd>
-                            <dd data-v-2c4ae852="" class="uk-text-small"><span data-v-2c4ae852=""> </span>
+                            <dd class="uk-text-small"><span> </span>
                             </dd>
                           </dl>
-                          <div data-v-2c4ae852="" class="uk-width-auto">60.000&nbsp;₫</div>
+                          <div class="uk-width-auto">60.000&nbsp;₫</div>
                         </div>
                       </div>
                       <!---->
                     </div>
-                    <div data-v-2c4ae852="" class="uk-card-footer">
-                      <div data-v-2c4ae852="" uk-grid="" class="uk-grid-small uk-padding-remove-bottom uk-grid">
-                        <div data-v-2c4ae852="" class="uk-width-expand uk-first-column">Cộng (1 món)</div>
-                        <div data-v-2c4ae852="" class="uk-width-auto">60.000&nbsp;₫</div>
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-padding-remove-bottom uk-grid">
+                        <div class="uk-width-expand uk-first-column">Cộng (1 món)</div>
+                        <div class="uk-width-auto">60.000&nbsp;₫</div>
                       </div>
-                      <div data-v-2c4ae852="" uk-grid="" class="uk-grid-small uk-padding-remove-bottom uk-grid">
-                        <div data-v-2c4ae852="" class="uk-width-expand uk-first-column">Vận chuyển</div>
-                        <div data-v-2c4ae852="" class="uk-width-auto">0&nbsp;₫</div>
+                      <div class="uk-grid-small uk-padding-remove-bottom uk-grid">
+                        <div class="uk-width-expand uk-first-column">Vận chuyển</div>
+                        <div class="uk-width-auto">0&nbsp;₫</div>
                       </div>
                       <!---->
                       <!---->
-                      <div data-v-2c4ae852="" uk-grid="" class="uk-grid-collapse uk-padding-remove-bottom uk-margin-top uk-grid">
-                        <div data-v-2c4ae852="" class="uk-width-expand uk-first-column">
-                          <input data-v-2c4ae852="" placeholder="Nhập mã ưu đãi tại đây" uk-form-width-medium="" type="text" class="uk-input">
+                      <div class="uk-grid-collapse uk-padding-remove-bottom uk-margin-top uk-grid">
+                        <div class="uk-width-expand uk-first-column">
+                          <input placeholder="Nhập mã ưu đãi tại đây" uk-form-width-medium="" type="text" class="uk-input">
                         </div>
-                        <div data-v-2c4ae852="" class="uk-width-auto">
-                          <button data-v-2c4ae852="" class="uk-button uk-button-default tch-text-white tch-text-bold uk-button-primary">ÁP DỤNG</button>
+                        <div class="uk-width-auto">
+                          <button class="uk-button uk-button-default tch-text-white tch-text-bold uk-button-primary">ÁP DỤNG</button>
                         </div>
                       </div>
                       <!---->
                     </div>
-                    <div data-v-2c4ae852="" class="uk-card-footer">
-                      <div data-v-2c4ae852="" uk-grid="" class="uk-grid-small uk-grid">
-                        <div data-v-2c4ae852="" class="uk-width-expand uk-first-column" style="margin-top: 5px;">Tổng cộng</div>
-                        <div data-v-2c4ae852="" class="uk-width-auto uk-text-large tch-text-bold">60.000&nbsp;₫</div>
+                    <div class="uk-card-footer">
+                      <div class="uk-grid-small uk-grid">
+                        <div class="uk-width-expand uk-first-column" style="margin-top: 5px;">Tổng cộng</div>
+                        <div class="uk-width-auto uk-text-large tch-text-bold">60.000&nbsp;₫</div>
                       </div>
                     </div>
                   </div>
@@ -2020,11 +443,11 @@ body{
           </div>
         </div>
       </div>
-      <div data-v-300db8a7="" class="tm-footer uk-position-bottom uk-overlay uk-overlay-default uk-position-relative uk-visible@l" style="background-color: black;">
+      <div class="tm-footer uk-position-bottom uk-overlay uk-overlay-default uk-position-relative uk-visible@l" style="background-color: black;">
         <div class="uk-container">
-          <div uk-grid="" class="uk-grid-small uk-margin-top uk-margin-bottom uk-grid">
+          <div class="uk-grid-small uk-margin-top uk-margin-bottom uk-grid">
             <div class="uk-width-1-4@l uk-width-1-2@m uk-width-1-1@s uk-first-column">
-              <div uk-grid="" class="uk-margin-top uk-grid uk-grid-stack">
+              <div class="uk-margin-top uk-grid uk-grid-stack">
                 <div class="uk-margin-bottom uk-width-1-1 uk-first-column">
                   <img data-src="/img/logo_footer.png" alt="" uk-img="" style="height: 108.1px;" src="https://order.thecoffeehouse.com/img/logo_footer.png">
                 </div>
@@ -2084,7 +507,7 @@ body{
             </div>
           </div>
           <hr>
-          <div uk-grid="" class="uk-grid-medium uk-child-width-expand@s uk-grid uk-grid-stack">
+          <div class="uk-grid-medium uk-child-width-expand@s uk-grid uk-grid-stack">
             <div class="uk-first-column">
               <div>
                 <div uk-margin="">
@@ -2093,30 +516,6 @@ body{
                   <p class="uk-margin-remove uk-margin-small-top uk-first-column">Số giấy phép ĐKKD: 0312867172 do sở kế hoạch đầu tư TPHCM ngày 23/07/2014</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-v-4c8f5598="" data-v-300db8a7="">
-        <!---->
-      </div>
-      <div data-v-300db8a7=""></div>
-      <div data-v-1f7c9acf="" data-v-300db8a7="" id="advertisement" uk-modal="" class="uk-modal">
-        <div data-v-1f7c9acf="" class="uk-modal-dialog">
-          <div data-v-1f7c9acf="" uk-slideshow="animation: push;min-height: 550; max-height: 1500; " autoplay-interval="3000" pause-on-hover="true" class="uk-modal-body uk-padding-remove uk-slideshow">
-            <ul data-v-1f7c9acf="" class="uk-slideshow-items uk-dark uk-height-large" style="height: 550px;"></ul>
-            <div data-v-1f7c9acf="" class="uk-light">
-              <ul data-v-1f7c9acf="" class="uk-slideshow-nav uk-dotnav uk-flex-center" style="position: relative; top: 40px;"></ul>
-              <a data-v-1f7c9acf="" uk-icon="icon: chevron-left; ratio: 3.5" href="#" uk-slideshow-item="previous" class="uk-position-center-left-out uk-position-small uk-visible@l uk-icon">
-                <svg width="70" height="70" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <polyline fill="none" stroke="#000" stroke-width="1.03" points="13 16 7 10 13 4"></polyline>
-                </svg>
-              </a>
-              <a data-v-1f7c9acf="" uk-icon="icon: chevron-right; ratio: 3.5" href="#" uk-slideshow-item="next" class="uk-position-center-right-out uk-position-small uk-visible@l uk-icon">
-                <svg width="70" height="70" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <polyline fill="none" stroke="#000" stroke-width="1.03" points="7 4 13 10 7 16"></polyline>
-                </svg>
-              </a>
             </div>
           </div>
         </div>

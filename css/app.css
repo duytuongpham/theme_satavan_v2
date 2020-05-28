@@ -9142,11 +9142,12 @@ ul.uk-nav-sub {
     width: calc(100% * 1 / 3.001);
   }
 
-  .uk-width-2-3\@m {
+/*  .uk-width-2-3\@m {
     width: calc(100% * 2 / 3.001);
-  }
+  }*/
 
   /* Quarters */
+
 
   .uk-width-1-4\@m {
     width: 25%;
@@ -12155,11 +12156,6 @@ iframe.uk-cover {
 
 /* Tablet landscape and bigger */
 
-@media (min-width: 960px) {
-  .uk-hidden\@m {
-    display: none !important;
-  }
-}
 
 /* Desktop and bigger */
 
@@ -15657,5 +15653,16 @@ iframe.uk-cover {
 
 html {
   font-size: 14px;
+}
+
+/*custom*/
+ @media screen and (max-device-width: 767px) {
+    .uk-card-small.uk-card-body, .uk-card-small .uk-card-body {
+      padding: 20px 20px;
+      display: none;
+    }
+ }
+ .anyClass {
+  overflow-x: scroll;
 }
 
